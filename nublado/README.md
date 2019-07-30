@@ -50,15 +50,16 @@ should give it a new rerun name.
 Now you have an output calibrated image and source catalog to explore. Explore the available notebooks. 
 
 ## Notebooks
+We recommend that you start with these notebooks:
 
 - `notebooks/notebook-demo/AAS_2019_tutorial/intro-process-ccd`
-	- Intro to LSST stack. Background info for the command you ran above. Also examples of source extraction, measurement, background estimation, and PSF estimation. 
+ - Intro to LSST stack. Background info for the command you ran above. Also examples of source extraction, measurement, background estimation, and PSF estimation.
 -  `notebooks/notebook-demo/AAS_2019_tutorial/Firefly` 
-  - Intro to image viewer. Note you can get the url with the display object's `.getClient().get_firefly_url()` method.
+ - Intro to image viewer. Note you can get the url with the display object's `.getClient().get_firefly_url()` method.
 - `notebooks/notebook-demo/Firefly` 
-  - Intro to image viewer that does not require `processCcd.py` to be run ahead of time. It fetches products on shared disk. 
+ - Intro to image viewer that does not require `processCcd.py` to be run ahead of time. It fetches products on shared disk.
 -  `notebooks/notebook-demo/AAS_2019_tutorial/intro-deblending` 
-  - Working with catalogs and deblending example. 
+ - Working with catalogs and examples of running detection, deblending, and source measurement.
 
 
 ## Resources
