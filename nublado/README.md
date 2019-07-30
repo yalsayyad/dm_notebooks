@@ -15,14 +15,15 @@ Once they give you the greenlight,
 
 1) go to: http://nublado.lsst.codes
 
+ - Select "Science Platform Notebook Aspect"
+ - Spawn an container. Choose `w_2019_29` and a small size.
+
 These notebooks are designed to analyze an image that you will process first with the
 LSST stack.  The raw data is available on the LSST Science Platform at
 `/project/shared/data/ci_hsc_small`. Users should copy this to their home
 directory to work on.
 
-2) Go to File > New Launcher.
-Then select "New Terminal" at the bottom.
-
+2) Select "New Terminal" at the bottom. (If you can't find this, go to _File_ > _New Launcher_)
 
 `cp -r /project/shared/data/ci_hsc_small ~/ci_hsc_small`
 
@@ -41,7 +42,7 @@ to use.
 
 4)  To run the initial LSST processing stages, use the command: 
 ```
-processCcd.py /home/YOUR_USERNAME/ci_hsc_small --rerun isr --id visit=903334 ccd=16
+processCcd.py /home/YOUR_USERNAME/ci_hsc_small --rerun isr --id visit=903334 ccd=16 --config isr.doWrite=True
 ```
 where `isr` is a RERUN_NAME is a name of your choosing; each time you process data, you
 should give it a new rerun name.
